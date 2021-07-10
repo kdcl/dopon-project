@@ -2,7 +2,7 @@
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-    <div>dkl;fsa</div>
+    <div>kdcl</div>
   </div>
   <router-view/>
   <button type="button" class="btn btn-primary">Primary</button>
