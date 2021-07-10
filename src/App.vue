@@ -2,7 +2,7 @@
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-    <div>kdcl22222</div>
+    <div>kdcl22</div>
   </div>
   <router-view/>
   <button type="button" class="btn btn-primary">Primary</button>
@@ -13,7 +13,6 @@
 <button type="button" class="btn btn-info">Info</button>
 <button type="button" class="btn btn-light">Light</button>
 <button type="button" class="btn btn-dark">Dark</button>
-
 <button type="button" class="btn btn-link">Link</button>
 
 </template>
