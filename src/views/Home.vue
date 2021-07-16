@@ -11,6 +11,10 @@ import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
+
+  created () {
+    console.log(process.env.VUE_APP_PATH)
+  },
   components: {
     HelloWorld
   }
