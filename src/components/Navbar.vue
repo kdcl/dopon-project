@@ -8,10 +8,14 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">產品</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <!-- <a class="nav-link" href="#">訂單</a> -->
+          <router-link class="nav-link" to="/dashboard/orders">訂單</router-link>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">優惠卷</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" @click.prevent="logout">登出</a>
