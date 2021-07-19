@@ -103,19 +103,7 @@ export default {
       const productComponent = this.$refs.productModal
       this.$http[httpMethod](api, { data: this.tempProduct }).then(response => {
         productComponent.hideModal()
-        if (response.data.success) {
-          this.getProducts()
-          this.emitter.emit('push-message', {
-            style: 'success',
-            title: '更新成功'
-          })
-        } else {
-          this.emitter.emit('push-message', {
-            style: 'danger',
-            title: '更新失敗',
-            content: response.data.message.join('、')
-          })
-        }
+        this.$httpMessageState(response, '更新商品狀態')
       })
     },
     deleteProduct (item) {

@@ -32,6 +32,10 @@ const routes = [
       {
         path: 'orders',
         component: () => import('../views/Orders.vue')
+      },
+      {
+        path: 'coupons',
+        component: () => import('../views/Coupons.vue')
       }
     ]
   }
@@ -39,6 +43,7 @@ const routes = [
 
 const router = createRouter({
   history: createWebHashHistory(),
+  linkActiveClass: 'active',
   routes
 })
 

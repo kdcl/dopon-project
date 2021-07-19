@@ -1,5 +1,5 @@
 <template>
-  <!-- <Loading :active="isLoading"></Loading> -->
+  <Loading :active="isLoading"></Loading>
   <table class="table mt-4">
   <thead>
     <tr>
@@ -147,6 +147,7 @@ export default {
       this.$http.put(api, { data: paid }).then(res => {
         this.isLoading = false
         this.getOrders(this.currentPage)
+        this.$httpMessageState(res, '更新付款狀態')
       })
     },
     deleteOrder () {
